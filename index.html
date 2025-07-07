@@ -1,0 +1,300 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chad Zimmerman | Portfolio</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="navbar__logo"><i class="ri-code-s-slash-line"></i>Logo.</a>
+
+        <div class="navbar__menu">
+            <a href="#" class="navbar__link">Home</a>
+            <a href="#projects" class="navbar__link">Projects</a>
+            <a href="#skills" class="navbar__link">Skills</a>
+            <a href="#about" class="navbar__link">About</a>
+        </div>
+
+        <div class="navbar__actions">
+            <div class="navbar__location">
+                <h5>USA, Colorado</h5>
+                <p>7:21:38 pm</p>
+            </div>
+            <button class="btn" onclick="location.href='#contact'">Get a Quote</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero__content">
+            <img src="assets/profile.jpg" alt="Profile Image" class="hero__image">
+            <h2>Hello! I'm Chad Zimmerman</h2>
+        </div>
+
+        <div class="hero__intro">
+            <h3>Frontend and C# Developer Based in Colorado, USA</h3>
+            <p>Crafting intuitive and high-performance web interfaces, desktop and mobile appilications for digital solutions.</p>
+            <div class="hero__actions">
+                <button class="btn" onclick="window.open('https://www.linkedin.com/in/chad-zimmerman-5861b5119/', '_blank')">Work With Me</button>
+                <button class="btn btn--secondary" onclick="location.href='#projects'">See My Portfolio</button>
+            </div>
+
+            <div class="hero__socials">
+                <a href="https://github.com/chadzimmerman" target="_blank" class="btn"><i class="ri-github-fill" ></i></a>
+                <a href="https://www.linkedin.com/in/chad-zimmerman-5861b5119/" target="_blank" class="btn"><i class="ri-linkedin-box-line"></i></a>
+                <a href="https://www.youtube.com/@ThatsMyChad" target="_blank" class="btn"><i class="ri-youtube-line"></i></a>
+                <a href="https://www.halftonellc.com" target="_blank" class="btn"><i class="ri-pages-line"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skills__description">
+            <h3>Experienced Across Multiple Projects and Technologies</h3>
+            <p>Bringing creativity and technical proficiency to building responsive websites + mobile and desktop applications, enchancing user experiences.</p>
+
+            <div class="skills__actions">
+                <button class="btn" onclick="window.open('https://www.linkedin.com/in/chad-zimmerman-5861b5119/', '_blank')">Work With Me</button>
+                <button class="btn btn--secondary" onclick="location.href='#contact'">Send Email</button>
+            </div>
+        </div>
+
+        <div class="skills__stats">
+            <i class="ri-codepen-line"></i>
+            <div class="skill__info">
+                <h5>Frontend</h5>
+                <p>HTML/CSS/Javascript</p>
+            </div>
+            <i class="ri-reactjs-line"></i>
+            <div class="skill__info">
+                <h5>Remote</h5>
+                <p>or in-office</p>
+            </div>
+            <div class="skill__info">
+                <h5>C#</h5>
+                <p>and .Net Frameworks</p>
+            </div>
+            <i class="ri-pages-line"></i>
+            <div class="skill__info">
+                <h5>React</h5>
+                <p>and Angular</p>
+            </div>
+            <i class="ri-remote-control-line"></i>
+        </div>
+    </section>
+
+    <section class="showcase" id="projects">
+        <div class="showcase__header">
+            <h3>I Can Help You With:</h3>
+            <button class="btn" onclick="window.open('https://github.com/chadzimmerman', '_blank')">See My Work</button>
+        </div>
+        <div class="showcase__categories">
+            <section class="category">
+                <div class="category__header">
+                    <div class="category__title">
+                        <i class="ri-macbook-line"></i>
+                        <h4>Websites</h4>
+                    </div>
+                    <div class="category__description">
+                        <p>Designing and developing eye-catching, fully responsive portfolio websites that highlight your skills and projects, ensuring a professional online prescence.</p>
+                        <a href="#"><i class="ri-share-circle-line"></i></a>
+                    </div>
+                </div>
+
+                <div class="category__projects">
+                    <div class="project-card">
+                        <img src="assets/portfolio2.png" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Portfolio 1</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__description">
+                            Updated portfolio website for a small 3-person team of 3D designers and animators to display optimized photos and videos on the web to potential clients. 
+                        </p>
+                        <button class="btn" onclick="window.open('https://www.halftonellc.com', '_blank')">View Live Demo</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/portfolio3.png" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Portfolio 2</h5>
+                            <p>Janaury 2025</p>
+                        </div>
+                        <p class="project-card__description">
+                            A simple, sleek, and poignant single-page portfolio for web designers and software engineers. 
+                        </p>
+                        <button class="btn" onclick="window.open('https://www.hirechadzimmerman.com', '_blank')">View Live Demo</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Portfolio 3</h5>
+                            <p>March 2025</p>
+                        </div>
+                        <p class="project-card__description">
+                            A fully functional e-commerce website with a backend for inventory management, built using the .NET architecture and MySQL, for a U.S.-based indie book publisher. 
+                        </p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Portfolio 4</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__description">
+                            Lorem ipsum odor amet, consectetuer adipiscing elit. Purus mollis curabitur suscipit a montes nostra est laoreet purus? 
+                        </p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category">
+                <div class="category__header">
+                    <div class="category__title">
+                        <i class="ri-group-2-line"></i>
+                        <h4>Mobile and App Development</h4>
+                    </div>
+                    <div class="category__description">
+                        <p>End-to-end development of responsive websites, desktop and mobile apps that look great on all devices, with a focus on performance and aesthetics.</p>
+                        <a href="#"><i class="ri-share-circle-line"></i></a>
+                    </div>
+                </div>
+
+                <div class="category__projects">
+                    <div class="project-card">
+                        <img src="" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Project 1</h5>
+                            <p>November 2024</p>
+                        </div>
+                        <p class="project-card__description">
+                            A dynamic web application built with Angular and Node.js, seamlessly integrating the World Bank API to deliver real-time data on countries worldwide. This app provides instant access to key metrics and insights, offering users a fast and intuitive way to explore global information. 
+                        </p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Project 2</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__description">
+                            Anefficient inventory application designed for a startup, developed using C#, WinForms, and MySQL. This practical solution replaces a legacy excel system, empowering users to seamlessly add, edit, or remove parts and products from the inventory. 
+                        </p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Project 3</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__description">
+                            Lorem ipsum odor amet, consectetuer adipiscing elit. Purus mollis curabitur suscipit a montes nostra est laoreet purus? 
+                        </p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Project 4</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__description">
+                                Lorem ipsum odor amet, consectetuer adipiscing elit. Purus mollis curabitur suscipit a montes nostra est laoreet purus? 
+                        </p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+    </section>
+
+    <section class="career" id="about">
+        <div class="career__jobs">
+            <h3>Work Experience</h3>
+            <div class="job">
+                <i class="ri-pen-nib-line"></i>
+                <div class="job__info">
+                    <h5>Design and Technology Teacher at <span>Heritage International School</span></h5>
+                    <p>August 2022 - Present</p>
+                </div>
+            </div>
+            <div class="job">
+                <i class="ri-pen-nib-line"></i>
+                <div class="job__info">
+                    <h5>Website Development (Part-Time) at <span>Mountain View Lutheran Church</span></h5>
+                    <p>February 2020 - August 2022</p>
+                </div>
+            </div>
+            <div class="job">
+                <i class="ri-pen-nib-line"></i>
+                <div class="job__info">
+                    <h5>Content Creator on <span>YouTube</span></h5>
+                    <p>January 2014 - August 2022</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="career__awards">
+            <h3>Certifications</h3>
+            <div class="award">
+                <div>
+                    <i class="ri-medal-fill"></i>
+                    <div class="award__info">
+                        <h5><span>AWS </span>Certified Cloud Practictioner</h5>
+                        <p>February 2025</p>
+                    </div>
+                </div>
+            <a href="#"><i class="ri-external-link-line"></i></a>
+        </div>
+        <div class="award">
+            <div>
+                <i class="ri-medal-fill"></i>
+                <div class="award__info">
+                    <h5><span>Google</span> IT Support Technician</h5>
+                    <p>January 2024</p>
+                </div>
+            </div>
+            <a href="https://www.coursera.org/account/accomplishments/specialization/LB764ACAU5SK" target="_blank"><i class="ri-external-link-line"></i></a>
+        </div>
+        <div class="award">
+            <div>
+                <i class="ri-medal-fill"></i>
+                <div class="award__info">
+                    <h5><span>ITIL®*^</span> Foundation Certified</h5>
+                    <p>April 2025</p>
+                </div>
+            </div>
+            <a href="#"><i class="ri-external-link-line"></i></a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h5>Got a Project?</h5>
+        <h2>Let's Work Together!</h2>
+        <button class="btn" onclick="window.location.href='mailto:bookingpedestals@gmail.com?subject=Hello&body=I would like to...';">Send Message</button>
+        <p>Phone: <span>+1 (307) 222-8093</span></p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__brand">
+            <a href="#">Logo.</a>
+            <p>© 2024 Chad Zimmerman</p>
+        </div>
+        <div class="footer__links">
+            <a href="#">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+        </div>
+    </footer>
+
+</body>
+</html>
