@@ -2,7 +2,7 @@
 
 A personal portfolio website built to showcase my projects, skills, and professional experience as a FullStack C# Developer based in Colorado. The site is designed with a clean, modern aesthetic, full responsiveness across all screen sizes, and a strong focus on performance.
 
-**Live Site:** [chadzimmerman.github.io/ResumeWebsite](https://chadzimmerman.github.io/ResumeWebsite)
+**Live Site:** [[chadzimmerman.github.io/personalPortfolioWebsite](https://chadzimmerman.github.io/personalPortfolioWebsite/)
 
 ---
 
