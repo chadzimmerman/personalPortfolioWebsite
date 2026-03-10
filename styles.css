@@ -79,7 +79,7 @@ body {
 .navbar__link,
 .footer__links a {
     font-size: 14px;
-    font-weight: 500px;
+    font-weight: 500;
     transition: all 0.5s ease;
 }
 
@@ -280,7 +280,7 @@ body {
     border-color: #1f2937;
 }
 
-.showcase_categories .category:first-child {
+.showcase__categories .category:first-child {
     margin-bottom: 100px;
 }
 
@@ -312,7 +312,7 @@ body {
     justify-content: center;
     padding: 10px;
     border-radius: 50%;
-    box-shadow: 0 10px 30px (0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .category__description {
@@ -344,7 +344,7 @@ body {
     padding: 20px;
     background: #ffF;
     border-radius: 10px;
-    box-shadow: 0 10px 30px (0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .project-card__image {
@@ -443,7 +443,7 @@ body {
     background: #fff;
     border-radius: 10px;
     font-weight: bold;
-    box-shadow: 0 10px 30px (0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .award {
@@ -490,7 +490,7 @@ body {
 }
 
 .contact h2 {
-    font-size: 36;
+    font-size: 36px;
     font-weight: 500;
     margin-bottom: 20px;
 }
