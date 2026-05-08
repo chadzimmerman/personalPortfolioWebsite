@@ -30,6 +30,8 @@ jobs:
             --exclude-loopback
             --accept 200,201,206,429,999
             --exclude 'linkedin\.com'
+            --exclude 'halftonellc\.com'
+            --max-retries 3
             './**/*.html'
           fail: true
 
