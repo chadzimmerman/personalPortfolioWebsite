@@ -28,7 +28,8 @@ jobs:
             --verbose
             --no-progress
             --exclude-loopback
-            --accept 200,201,206,429
+            --accept 200,201,206,429,999
+            --exclude 'linkedin\.com'
             './**/*.html'
           fail: true
 
