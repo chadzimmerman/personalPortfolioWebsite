@@ -1,0 +1,10 @@
+[
+  {
+    "assertions": {
+      "categories:performance":    { "minScore": 0.85, "aggregationMethod": "median-run" },
+      "categories:accessibility":  { "minScore": 0.90, "aggregationMethod": "median-run" },
+      "categories:best-practices": { "minScore": 0.90, "aggregationMethod": "median-run" },
+      "categories:seo":            { "minScore": 0.90, "aggregationMethod": "median-run" }
+    }
+  }
+]

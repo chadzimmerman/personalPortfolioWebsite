@@ -1,0 +1,77 @@
+# Runs on every push to main and on any pull request targeting main.
+# Two independent jobs run in parallel: link checking and Lighthouse CI.
+name: Site Quality Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+
+  # ── Job 1: Broken Link Checker ─────────────────────────────────────────────
+  # Lychee reads every .html file in the repo and checks each href/src.
+  # External URLs are checked over the network; missing internal files are
+  # caught by comparing against the files that actually exist in the repo.
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check all links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Scan every HTML file, including subdirectories (jp/, ru/)
+          args: >
+            --verbose
+            --no-progress
+            --exclude-loopback
+            --accept 200,201,206,429
+            './**/*.html'
+          fail: true
+
+  # ── Job 2: Lighthouse CI ───────────────────────────────────────────────────
+  # Serves the site locally with a static file server, then runs headless
+  # Chrome against it. Audits Performance, Accessibility, Best Practices,
+  # and SEO. Fails if any score drops below the thresholds set below.
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Spin up a local static file server in the background (&)
+      # so Lighthouse has something to audit without needing the live site.
+      - name: Serve site locally
+        run: npx --yes serve . --listen 3000 &
+
+      # Wait until the server is actually responding before continuing.
+      - name: Wait for server
+        run: npx --yes wait-on http://localhost:3000
+
+      - name: Run Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          # Audit all three language versions of the site
+          urls: |
+            http://localhost:3000/
+            http://localhost:3000/jp/
+            http://localhost:3000/ru/
+          # Save the full HTML report as a downloadable artifact on GitHub
+          uploadArtifacts: true
+          # Fail the check if scores drop below these thresholds (0–1 scale)
+          budgetPath: .github/lighthouse-budget.json
+
+  # ── (Future ideas for more complex projects) ───────────────────────────────
+  # - Unit tests: run Jest / xUnit / pytest here
+  # - Build step: npm run build before serving
+  # - Deploy to staging: push to a preview URL, then run Lighthouse against it
+  # - Matrix builds: test across Node 18, 20, 22 simultaneously
+  # - Secrets: store API keys in GitHub Secrets, reference as ${{ secrets.KEY }}

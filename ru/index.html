@@ -1,0 +1,304 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Чад Зиммерман — фулстек-разработчик (React & C#) из Колорадо, США. Разрабатываю высокопроизводительные веб, десктопные и мобильные приложения. Открыт к фрилансу и постоянной занятости.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Чад Зиммерман | Портфолио</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="navbar__logo"><i class="ri-code-s-slash-line"></i>_Codes.</a>
+
+        <div class="navbar__menu">
+            <a href="#" class="navbar__link">Главная</a>
+            <a href="#projects" class="navbar__link">Проекты</a>
+            <a href="#skills" class="navbar__link">Навыки</a>
+            <a href="#about" class="navbar__link">Обо мне</a>
+        </div>
+
+        <div class="navbar__actions">
+            <div class="navbar__location">
+                <h5>США, Колорадо</h5>
+                <p id="clock"></p>
+            </div>
+            <a href="../" class="lang-toggle">EN</a>
+            <a href="../jp/" class="lang-toggle">日本語</a>
+            <button class="btn" onclick="location.href='#contact'">Написать мне</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero__content">
+            <img src="../assets/profilePicture2.webp" alt="Фото профиля" class="hero__image">
+            <h2>Привет! Я Чад Зиммерман</h2>
+        </div>
+
+        <div class="hero__intro">
+            <h3>Фулстек-разработчик (React & C#) из Колорадо, США</h3>
+            <p>Создаю интуитивные и высокопроизводительные веб-интерфейсы, десктопные и мобильные приложения.</p>
+            <div class="hero__actions">
+                <button class="btn" onclick="window.open('https://www.linkedin.com/in/chad-zimmerman-5861b5119/', '_blank')">Работать со мной</button>
+                <button class="btn btn--secondary" onclick="location.href='#projects'">Посмотреть портфолио</button>
+            </div>
+
+            <div class="hero__socials">
+                <a href="https://github.com/chadzimmerman" target="_blank" class="btn" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/chad-zimmerman-5861b5119/" target="_blank" class="btn" aria-label="LinkedIn"><i class="ri-linkedin-box-line"></i></a>
+                <a href="https://www.youtube.com/@ThatsMyChad" target="_blank" class="btn" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+                <a href="https://www.halftonellc.com" target="_blank" class="btn" aria-label="Сайт Halftone LLC"><i class="ri-pages-line"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skills__description">
+            <h3>Опыт в различных проектах и технологиях</h3>
+            <p>Применяю творческий подход и технические знания для создания адаптивных сайтов, мобильных и десктопных приложений, улучшая пользовательский опыт.</p>
+
+            <div class="skills__actions">
+                <button class="btn" onclick="window.open('https://www.linkedin.com/in/chad-zimmerman-5861b5119/', '_blank')">Работать со мной</button>
+                <button class="btn btn--secondary" onclick="location.href='#contact'">Написать письмо</button>
+            </div>
+        </div>
+
+        <div class="skills__stats">
+            <i class="ri-code-s-slash-line"></i>
+            <div class="skill__info">
+                <h5>C# / .NET</h5>
+                <p>API, MAUI</p>
+            </div>
+            <i class="ri-reactjs-line"></i>
+            <div class="skill__info">
+                <h5>React & Next.js</h5>
+                <p>TypeScript</p>
+            </div>
+            <div class="skill__info">
+                <h5>Python</h5>
+                <p>Django & REST API</p>
+            </div>
+            <i class="ri-terminal-box-line"></i>
+            <div class="skill__info">
+                <h5>React Native</h5>
+                <p>iOS & Android</p>
+            </div>
+            <i class="ri-smartphone-line"></i>
+        </div>
+    </section>
+
+    <section class="showcase" id="projects">
+        <div class="showcase__header">
+            <h3>Чем я могу помочь:</h3>
+            <button class="btn" onclick="window.open('https://github.com/chadzimmerman', '_blank')">Посмотреть работы</button>
+        </div>
+        <div class="showcase__categories">
+            <section class="category">
+                <div class="category__header">
+                    <div class="category__title">
+                        <i class="ri-macbook-line"></i>
+                        <h4>Сайты</h4>
+                    </div>
+                    <div class="category__description">
+                        <p>Разрабатываю привлекательные и полностью адаптивные портфолио-сайты, которые выгодно представляют ваши навыки и проекты.</p>
+                        <i class="ri-global-line"></i>
+                    </div>
+                </div>
+
+                <div class="category__projects">
+                    <div class="project-card">
+                        <img src="../assets/portfolio2.webp" alt="Портфолио-сайт Halftone LLC" class="project-card__image" loading="lazy">
+                        <div class="project-card__info">
+                            <h5>Halftone, LLC</h5>
+                            <p>Август 2023</p>
+                        </div>
+                        <p class="project-card__description">
+                            Обновил портфолио-сайт для небольшой команды 3D-дизайнеров и аниматоров: оптимизированные фото и видео для привлечения потенциальных клиентов.
+                        </p>
+                        <button class="btn" onclick="window.open('https://chadzimmerman.github.io/halftone-website/', '_blank')">Открыть демо</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="../assets/dreamsuncharted.webp" alt="Сайт комикс-издателя Dreams Uncharted" class="project-card__image" loading="lazy">
+                        <div class="project-card__info">
+                            <h5>Dreams Uncharted</h5>
+                            <p>2024</p>
+                        </div>
+                        <p class="project-card__description">
+                            Клиентский сайт с электронной коммерцией для независимого издателя комиксов. PHP и MySQL, поддержка подписок, цифровых продаж и доставки контента — уже принёс тысячи долларов выручки.
+                        </p>
+                        <button class="btn" onclick="window.open('https://www.dreamsuncharted.com', '_blank')">Открыть демо</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="../assets/ecommerce1.webp" alt="Интернет-магазин" class="project-card__image" loading="lazy">
+                        <div class="project-card__info">
+                            <h5>Beresta Literary Press</h5>
+                            <p>Лето 2026</p>
+                        </div>
+                        <p class="project-card__description">
+                            Двуязычная (EN/RU) платформа электронной коммерции для независимого книжного издателя. React + TypeScript, оплата через Stripe, Supabase/PostgreSQL для управления инвентарём и заказами, динамическое переключение языка через i18next без перезагрузки страницы.
+                        </p>
+                        <button class="btn" onclick="window.open('https://github.com/chadzimmerman/Beresta-Frontend-Website', '_blank')">Открыть репозиторий</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="../assets/edvue.webp" alt="Промо-сайт мобильного приложения EdVue" class="project-card-construction__image" loading="lazy">
+                        <div class="project-card__info">
+                            <h5>Промо-сайт мобильного приложения</h5>
+                            <p>Декабрь 2025</p>
+                        </div>
+                        <p class="project-card__description">
+                            Адаптивный промо-сайт для мобильного приложения EdVue на .NET MAUI. Переключаемые карточки отзывов, секции с функциями приложения и призыв к скачиванию.
+                        </p>
+                        <button class="btn" onclick="window.open('https://chadzimmerman.github.io/CapstoneAppWebsite/', '_blank')">Открыть демо</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category">
+                <div class="category__header">
+                    <div class="category__title">
+                        <i class="ri-group-2-line"></i>
+                        <h4>Мобильная и десктопная разработка</h4>
+                    </div>
+                    <div class="category__description">
+                        <p>Полный цикл разработки адаптивных сайтов, десктопных и мобильных приложений с акцентом на производительность и эстетику.</p>
+                        <i class="ri-apps-line"></i>
+                    </div>
+                </div>
+
+                <div class="category__projects">
+                    <div class="project-card">
+                        <img src="../assets/energeia.webp" alt="Приложение для отслеживания привычек Energe.ia" class="project-card-construction__image" loading="lazy">
+                        <div class="project-card__info">
+                            <h5>Energe.ia</h5>
+                            <p>Сентябрь 2026</p>
+                        </div>
+                        <p class="project-card__description">
+                            Приложение для отслеживания полезных привычек в стиле RPG — геймифицирует позитивные изменения и поощряет их. React Native + Express.js.
+                        </p>
+                        <button class="btn" onclick="window.open('https://github.com/chadzimmerman/energeia-app', '_blank')">Открыть репозиторий</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="../assets/learn-kanji-icon.jpg" alt="iOS-приложение Learn Kanji with Yokai" class="project-card-construction__image" loading="lazy">
+                        <div class="project-card__info">
+                            <h5>Learn Kanji with Yokai</h5>
+                            <p>В разработке</p>
+                        </div>
+                        <p class="project-card__description">
+                            iOS-игра для изучения написания кандзи, дополнение к одноимённой изданной книге. Холст с имитацией каллиграфии, интервальное повторение, защита от читов по количеству штрихов и коллекционные карточки ёкаев. Swift + SwiftUI.
+                        </p>
+                        <button class="btn" onclick="window.open('https://github.com/chadzimmerman/learn-kanji-with-yokai', '_blank')">Открыть репозиторий</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="../assets/AssessmentsPageThumbnail.webp" alt="Мобильное приложение EdVue" class="project-card-construction__image" loading="lazy">
+                        <div class="project-card__info">
+                            <h5>EdVue Tracking App</h5>
+                            <p>Октябрь 2025</p>
+                        </div>
+                        <p class="project-card__description">
+                            Мобильное приложение на .NET MAUI для отслеживания учёбы: управление семестрами, курсами и оценками. Детализированные просмотры, валидация данных, push-уведомления и обмен заметками.
+                        </p>
+                        <button class="btn" onclick="window.open('https://github.com/chadzimmerman/EdVue', '_blank')">Открыть репозиторий</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="../assets/python-app-icon.png" alt="Генератор русских флеш-карточек" class="project-card-construction__image" loading="lazy">
+                        <div class="project-card__info">
+                            <h5>Генератор флеш-карточек</h5>
+                            <p>2025</p>
+                        </div>
+                        <p class="project-card__description">
+                            Python-скрипт, выросший в десктопное приложение для macOS (Windows и Linux — скоро). Сканирует русскоязычные тексты, находит пробелы в словарном запасе по сравнению с вашей колодой Anki и генерирует карточки с ударениями, аудио от Google TTS, примерами и грамматическими пометками.
+                        </p>
+                        <button class="btn" onclick="window.open('https://chadzimmerman.github.io/russian-flashcard-generator/', '_blank')">Открыть демо</button>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+    </section>
+
+    <section class="career" id="about">
+        <div class="career__jobs">
+            <h3>Опыт работы</h3>
+            <div class="job">
+                <i class="ri-pen-nib-line"></i>
+                <div class="job__info">
+                    <h5>Инженер-программист в <span>Monarch Cyber Solutions</span></h5>
+                    <p>Сентябрь 2025 — по н.в.</p>
+                </div>
+            </div>
+            <div class="job">
+                <i class="ri-pen-nib-line"></i>
+                <div class="job__info">
+                    <h5>Стажёр-разработчик в <span>Orthodox Church in America</span></h5>
+                    <p>Август 2025 — Сентябрь 2025</p>
+                </div>
+            </div>
+            <div class="job">
+                <i class="ri-pen-nib-line"></i>
+                <div class="job__info">
+                    <h5>IT-специалист в <span>Halftone, LLC</span></h5>
+                    <p>Июнь 2022 — Октябрь 2025</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="career__awards">
+            <h3>Сертификаты</h3>
+            <div class="award">
+                <div>
+                    <i class="ri-medal-fill"></i>
+                    <div class="award__info">
+                        <h5><span>AWS </span>Certified Cloud Practitioner</h5>
+                        <p>Февраль 2025</p>
+                    </div>
+                </div>
+                <a href="https://www.credly.com/badges/7da66a9b-9cef-461e-9d0a-a65a2799060a/linked_in?t=ss14hl" target="_blank"><i class="ri-external-link-line"></i></a>
+            </div>
+            <div class="award">
+                <div>
+                    <i class="ri-medal-fill"></i>
+                    <div class="award__info">
+                        <h5><span>Google</span> IT Support Technician</h5>
+                        <p>Январь 2024</p>
+                    </div>
+                </div>
+                <a href="https://www.coursera.org/account/accomplishments/specialization/LB764ACAU5SK" target="_blank"><i class="ri-external-link-line"></i></a>
+            </div>
+            <div class="award">
+                <div>
+                    <i class="ri-medal-fill"></i>
+                    <div class="award__info">
+                        <h5><span>ITIL4</span> Foundation Certified</h5>
+                        <p>Май 2025</p>
+                    </div>
+                </div>
+                <a href="https://www.linkedin.com/in/chad-zimmerman-5861b5119/" target="_blank"><i class="ri-external-link-line"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h5>Есть проект?</h5>
+        <h2>Давайте работать вместе!</h2>
+        <button class="btn" onclick="window.location.href='mailto:chadzimmerman.codes@gmail.com?subject=Привет&body=Здравствуйте! Я хотел бы...';">Отправить сообщение</button>
+        <p>Телефон: <span>+1 (307) 222-8093</span></p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__brand">
+            <a href="#">_Codes.</a>
+            <p>© 2026 Chad Zimmerman</p>
+        </div>
+        <div class="footer__links">
+            <a href="#">Главная</a>
+            <a href="#projects">Проекты</a>
+            <a href="#skills">Навыки</a>
+            <a href="#about">Обо мне</a>
+        </div>
+    </footer>
+<script src="../javascript.js"></script>
+</body>
+</html>
